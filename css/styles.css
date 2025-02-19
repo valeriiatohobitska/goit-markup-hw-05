@@ -1,0 +1,9 @@
+body {
+    color: #434455;
+    background: #ffffff;
+}
+
+button {
+    color: currentColor;
+    cursor: pointer;
+}
