@@ -6,11 +6,12 @@
     --cl-success: 49, 208, 170;
     --cl-bg: 255, 255, 255, 1;
     --cl-light-text: 244, 244, 253;
+    --cl-light-bg: 244, 244, 253, 1;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(var(--cl-dark));
+    color: rgb(var(--cl-text));
     background: rgb(var(--cl-bg));
     font-size: 16px;
     font-style: normal;
@@ -35,23 +36,27 @@ button {
 }
 
 button:hover {
-background-color: rgb(var(--cl-pressed));
+   background-color: rgb(var(--cl-pressed));
+}
+
+button:focus {
+   background-color: rgb(var(--cl-pressed));
 }
 
 /* #region Logo */
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: rgb(var(--cl-dark));
+    color: rgb(var(--cl-primary));
 }
 
 .logo-blue {
-    color: rgb(var(--cl-primary));
+    color: rgb(var(--cl-dark));
 }
 /* #endregion Logo */
 
@@ -73,11 +78,21 @@ background-color: rgb(var(--cl-pressed));
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.header-menu-link:hover {
+    color: rgb(var(--cl-pressed));
+}
+
+.header-menu-link:focus {
+    color: rgb(var(--cl-pressed));
+}
 /* #endregion Header */
 
 
 /* #region Contacts */
-.header-contacts {}
+.header-contacts {
+    font-style: normal;
+}
 
 .header-contacts-item {
     list-style-type: none;
@@ -87,6 +102,16 @@ background-color: rgb(var(--cl-pressed));
     color: rgb(var(--cl-text));
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header-contacts-link:hover {
+    color: rgb(var(--cl-pressed));
+}
+
+.header-contacts-link:focus {
+    color: rgb(var(--cl-pressed));
 }
 /* #end region Contacts */
 
@@ -101,7 +126,9 @@ background-color: rgb(var(--cl-pressed));
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    text-align: center;
+}
 
 .btn {}
 
@@ -134,13 +161,23 @@ letter-spacing: 0.02em;
 
 
 /* #region Team */
-.team {}
+.team {
+    background-color: rgb(var(--cl-light-bg))
+}
 
-.team-heading {}
+.team-heading {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
 
 .team-list {}
 
-.team-item {}
+.team-item {
+    background-color: rgb(var(--cl-bg))
+}
 
 .team-img {}
 
@@ -185,14 +222,22 @@ letter-spacing: 0.02em;
     background-color: rgb(var(--cl-dark));
 }
 
-.footer .logo {
-    color: rgb(var(--cl-bg));
+.footer-logo {
+    color: rgb(var(--cl-primary));
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-logo-white {
+    color: rgb(var(--cl-light-bg));
+    text-transform: uppercase;
 }
 
 .footer-caption {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color:rgb(var(--cl-light-text));
-    
 }
 /* #end region Footer */
