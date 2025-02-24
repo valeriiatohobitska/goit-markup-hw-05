@@ -145,10 +145,11 @@ button:focus {
 .features-item {}
 
 .features-caption {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;     
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: rgb(var(--cl-dark));     
 }
 
 .features-desc {
@@ -171,6 +172,7 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: rgb(var(--cl-dark));
 }
 
 .team-list {}
@@ -186,6 +188,7 @@ letter-spacing: 0.02em;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        color: rgb(var(--cl-dark));
 }
 
 .team-desc {
@@ -198,7 +201,14 @@ letter-spacing: 0.02em;
 
 
 /* #region Portfolio */
-.portfolio-heading {}
+.portfolio-heading {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: rgb(var(--cl-dark));
+}
 
 .portfolio-img {}
 
@@ -207,6 +217,7 @@ letter-spacing: 0.02em;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: rgb(var(--cl-dark));
 }
 
 .portfolio-desc {
@@ -223,6 +234,7 @@ letter-spacing: 0.02em;
 }
 
 .footer-logo {
+    font-family: 'Raleway', sans-serif;
     color: rgb(var(--cl-primary));
     font-weight: 700;
     font-size: 18px;
