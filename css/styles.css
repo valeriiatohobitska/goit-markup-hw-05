@@ -9,6 +9,10 @@
     --cl-light-bg: 244, 244, 253, 1;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: rgb(var(--cl-text));
