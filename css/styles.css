@@ -9,9 +9,20 @@
     --cl-light-bg: 244, 244, 253, 1;
 }
 
+ h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+} 
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -24,6 +35,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 1158px; 
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 .visually-hidden {
