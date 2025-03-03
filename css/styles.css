@@ -300,6 +300,18 @@ button:focus {
     color: rgb(var(--cl-text));
 }
 
+.features-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    margin-bottom: 8px;
+
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    background: rgb(var(--cl-light-text));
+}
+
 /* #end region Features */
 
 
@@ -349,12 +361,32 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgb(var(--cl-text));
+    padding-bottom: 8px;
 
     text-align: center;
 }
 
 .team-info {
     padding: 32px 0;
+}
+
+.social-icon {
+    gap: 24px;
+    fill: rgb(var(--cl-light-text));
+
+    display: flex;
+    justify-content: center;
+}
+
+.icon-bg {
+    background-color: rgb(var(--cl-primary));
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* #end region Team */
@@ -420,6 +452,8 @@ button:focus {
 .footer {
     background-color: rgb(var(--cl-dark));
     padding: 100px 0;
+
+    display: flex;
 }
 
 .footer-logo {
@@ -445,6 +479,26 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgb(var(--cl-light-text));
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 16px;
+}
+
+.social-media-heading {
+  color: rgb(var(--cl-light-text));
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.footer-social-icon .features-icon {
+    fill: rgb(var(--cl-light-text));
+}
+
+.container.footer-wrapper {
+    display: flex;
+    gap: 120px;
 }
 
 /* #end region Footer */
