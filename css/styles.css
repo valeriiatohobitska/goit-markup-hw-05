@@ -610,3 +610,103 @@ letter-spacing: 0.02em;
 }
 
 /* #end region Footer */
+
+/* #region Modal */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: rgba(var(--cl-dark), 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.backdrop.is-open .modal {
+    opacity: 1;
+}
+
+.modal { 
+    position: relative;
+    max-width: 408px;
+    min-height: 584px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 24px;
+
+    opacity: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+
+    background: rgb(var(--cl-bg));
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2E2F42;
+}
+
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: rgb(var(--cl-pressed));
+    color: rgb(var(--cl-bg));
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+}
+
+.modal-btn-icon {
+    fill: currentColor;
+
+}
+
+.modal-btn-icon:hover {
+    fill: currentColor;
+}
+
+
+.modal-caption {
+    color: rgb(var(--cl-dark));
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 48px;
+}
+
+.input {
+    display: block;
+
+}
+
+.form-button {
+    
+
+}
+/* #end region Modal */
