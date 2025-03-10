@@ -592,6 +592,10 @@ button:focus {
     gap: 16px;
 }
 
+.social-media {
+    margin-right: 80px;
+}
+
 .social-media-heading {
   color: var(--cl-white);
   margin-bottom: 16px;
@@ -607,6 +611,67 @@ letter-spacing: 0.02em;
 .container.footer-wrapper {
     display: flex;
     align-items: baseline;
+}
+
+
+.subscription-container {}
+
+.subscribtion-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.subscription-label {}
+
+.subscription-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.subscription-input::placeholder {
+    color: #fff;
+}
+
+.subscribtion-button {
+    min-width: 165px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(var(--cl-primary)); 
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribtion-button-icon {
+    margin-left: 16px;
+    fill: #fff;
 }
 
 /* #end region Footer */
