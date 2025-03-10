@@ -508,25 +508,27 @@
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-comment"
-              name="userComment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               rows="5"
               minlength="10"
               maxlength="1000"
-              placeholder="Enter Text"
+              placeholder="Text input"
             ></textarea>
           </div>
 
           <label class="modal-form-agreement">
-            <input class="visually-hidden" type="checkbox" value="true" />
+            <div class="modal-form-checkbox-container">
+            <input class="visually-hidden" type="checkbox" value="true" name="user-privacy"/>
             <span class="modal-form-checkbox">
               <svg class="modal-form-checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
+            </div>
             I accept the terms and conditions of the <a href="" class="modal-form-policy">Privacy Policy</a>
           </label>
-          <button class="btn modal-submit-btn" type="submit">Send</button>
+          <button class="btn modal-submit-btn" type="button">Send</button>
         </form>
       </div>
     </div>
