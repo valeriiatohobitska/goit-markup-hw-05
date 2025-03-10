@@ -916,7 +916,6 @@ input {
 .modal-form-agreement {
     display: block;
     color: #8E8F99;
-    margin-bottom: 24px;
     
     font-size: 12px;
     line-height: 1.17;
@@ -928,6 +927,7 @@ input {
 .modal-form-checkbox-container {
     display: inline-flex;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .modal-form-checkbox {
