@@ -443,6 +443,10 @@
               </a>
             </li>
           </ul>
+          <form name="subscription">
+            <input type="email" />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -458,20 +462,64 @@
         </div>
         <p class="modal-caption">Leave your contacts and we will call you back</p>
 
-        <form>
-          <label>
-            Name
-            <input type="text" />
-          </label>
+        <!-- Form -->
+        <form class="modal-form" name="call-back" autocomplete="off">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" name="user-name" id="user-name" required />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
 
-          <label>
-            Email
-            <input type="text" />
-          </label>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone">Phone</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="tel" name="user-phone" id="user-phone" required />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
 
-          <button class="form-button" type="submit">Submit</button>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Email</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="email" name="user-email" id="user-email" required />
+              <svg class="modal-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-form-comment"
+              name="userComment"
+              id="comment"
+              rows="5"
+              minlength="10"
+              maxlength="1000"
+              placeholder="Enter Text"
+            ></textarea>
+          </div>
+
+          <label class="modal-form-agreement">
+            <input class="visually-hidden" type="checkbox" value="true" />
+            <span class="modal-form-checkbox">
+              <svg class="modal-form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the <a href="" class="modal-form-policy">Privacy Policy</a>
+          </label>
+          <button class="btn modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <!-- End Form -->
   </body>
 </html>
