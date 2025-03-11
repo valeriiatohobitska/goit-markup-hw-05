@@ -983,7 +983,7 @@ input {
     fill: transparent;
 
     border: 1px solid rgba(46, 47, 66, 0.40);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .custom-checkbox:checked ~ .modal-form-policy {
@@ -1001,12 +1001,13 @@ input {
 
 .custom-checkbox:checked + label .modal-form-checkbox {
     border: none;
-    fill: #fff;
+    fill: var(--cl-overlay-white);
     background-color: rgb(var(--cl-pressed));
 }
 
 .custom-checkbox:checked+label .modal-form-checkbox .modal-form-checkbox-icon{
     opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-policy {
