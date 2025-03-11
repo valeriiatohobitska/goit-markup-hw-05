@@ -5,7 +5,7 @@
     --cl-text: 67, 68, 85;
     --cl-success: 49, 208, 170;
     --cl-bg: 255, 255, 255, 1;
-    --cl-light-text: 244, 244, 253;
+    --cl-light-text: 244, 244, 253; 
     --cl-light-bg: 244, 244, 253, 1;
     --cl-grey: 46, 47, 66, 70;
     --cl-green: 49, 208, 170, 1;
@@ -715,7 +715,8 @@ letter-spacing: 0.02em;
     min-height: 584px;
     width: 408px;
     border-radius: 4px;
-    padding: 20px;
+
+    padding: 72px 24px 24px 24px;
 
     opacity: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -770,6 +771,11 @@ letter-spacing: 0.02em;
     margin: 0 auto;
 }
 
+.modal-submit-btn:hover .modal-form-checkbox-icon,
+.modal-submit-btn:focus .modal-form-checkbox-icon {
+    fill: #ffffff;
+}
+
 
 .modal-caption {
     color: rgb(var(--cl-dark));
@@ -777,7 +783,6 @@ letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 48px;
     margin-bottom: 16px;
 }
 
@@ -810,7 +815,7 @@ input {
 .modal-form {}
 
 .modal-form-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     line-height: 0;
 }
 
@@ -944,29 +949,31 @@ input {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='checkbox']:checked + .modal-form-checkbox {
-    background-color: rgb(var(--cl-pressed));
+input[type='checkbox']:checked ~ .modal-form-checkbox {
+    background-color: #404bbf;
     border: none;
 }
 
-input[type='checkbox']:focus-visible + .modal-form-checkbox {
-    border-color: rgb(var(--cl-pressed));
+input[type='checkbox']:focus-visible ~ .modal-form-checkbox {
+    border-color: #404bbf;
 }
 
 .modal-form-checkbox-icon {
     fill: transparent;
-
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='checkbox']:checked + .modal-form-checkbox .modal-form-checkbox-icon {
+input[type='checkbox']:checked ~ .modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
-    fill: rgb(var(--cl-light-text));
+    fill: rgb(var(--cl-overlay-white));
 }
 
 .modal-form-policy {
     text-decoration-line: underline;
     color: rgb(var(--cl-primary));
+    fill: transparent;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #end region Agreement */
