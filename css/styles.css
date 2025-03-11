@@ -995,7 +995,8 @@ input[type='checkbox']:focus-visible ~ .modal-form-checkbox {
 
 input[type='checkbox']:checked + label .modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
-    fill: rgb(var(--cl-pressed));
+    fill: #fff;
+    background-color: rgb(var(--cl-pressed));
 }
 
 .modal-form-policy {
