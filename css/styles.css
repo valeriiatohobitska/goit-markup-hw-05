@@ -993,9 +993,9 @@ input[type='checkbox']:focus-visible ~ .modal-form-checkbox {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='checkbox']:checked ~ .modal-form-checkbox .modal-form-checkbox-icon {
+input[type='checkbox']:checked + label .modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
-    fill: rgb(var(--cl-overlay-white));
+    fill: rgb(var(--cl-pressed));
 }
 
 .modal-form-policy {
