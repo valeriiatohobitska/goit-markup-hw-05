@@ -19,6 +19,12 @@
     --indent-row: var(var(--indent-col));
 }
 
+/* Breakpoints 
+Mobile up to 320px
+Tablet up to 768px
+Desktop up to 1440px
+*/
+
 h1,
 h2,
 h3,
@@ -54,10 +60,27 @@ a {
 }
 
 .container {
-    width: 1158px;
+   min-width: 320px;
+   max-width: 375px;
+   margin: 0 auto;
+   padding: 16px;
+
+    /* width: 1158px;
     margin: 0 auto;
     padding: 0 16px;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 0 15px; */
+}
+
+@media only screen and (min-width: 768px) {
+   .container{
+    max-width: 768px;
+  }
+} 
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1158px;
+    }
 }
 
 .visually-hidden {
@@ -72,6 +95,14 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.section {
+    padding: 96px 0;
+
+@media only screen and (min-width: 1440px) {
+    padding: 120px 0;
+}
 }
 
 /* button {
@@ -90,6 +121,7 @@ a {
     transition-property: background-color;
 }
 */
+
 button:hover {
     background-color: rgb(var(--cl-pressed));
 }
@@ -259,7 +291,7 @@ button:focus {
 
 .hero {
     background-color: rgb(var(--cl-dark));
-    padding: 188px 0;
+    /* padding: 188px 0; */
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.70),
         rgba(46, 47, 66, 0.70)
@@ -316,7 +348,7 @@ button:focus {
 
 /* #region Features */
 .features {
-    padding: 120px 0;
+    /* padding: 120px 0; */
     margin: 0 auto;
     max-width: 1440px;
 }
@@ -363,7 +395,7 @@ button:focus {
 /* #region Team */
 .team {
     background-color: rgb(var(--cl-light-bg));
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 
 .team-heading {
@@ -448,7 +480,7 @@ button:focus {
 /* #region Portfolio */
 
 .portfolio {
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 
 .portfolio-heading {
