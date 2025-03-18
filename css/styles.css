@@ -994,6 +994,7 @@ input {
 
 }
 
+
 .modal-submit-btn:disabled {
     filter: grayscale(1);
     background-color: rgb(var(--cl-primary));
@@ -1116,8 +1117,9 @@ input {
 /* #region Agreement */
 
 .modal-form-agreement {
-    display: block;
+    display: flex;
     color: #8E8F99;
+    align-items: center;
     
     font-size: 12px;
     line-height: 1.17;
@@ -1141,6 +1143,7 @@ input {
     border-radius: 2px;
     margin-right: 8px;
     cursor: pointer;
+    flex-shrink: 0;
 
     fill: transparent;
 
