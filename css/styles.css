@@ -874,9 +874,13 @@ letter-spacing: 0.02em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 408px;
+    <<-->> 
+    min-height: 623px;
+    min-width: 288px;
+    /* max-width: 408px;
     min-height: 584px;
-    width: 408px;
+    width: 408px; */
+
     border-radius: 4px;
 
     padding: 72px 24px 24px 24px;
@@ -886,6 +890,15 @@ letter-spacing: 0.02em;
 
     background: #fcfcfc;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+
+    @media only screen and (min-width: 768px) {
+        
+    max-width: 408px;
+    min-height: 584px;
+    width: 408px;
+
+    }
 }
 
 .modal-btn {
